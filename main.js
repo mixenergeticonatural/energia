@@ -6,7 +6,7 @@ function scrollToOffer() {
 // Contador regressivo
 function startCountdown() {
     const countdownElement = document.getElementById('countdown');
-    let minutes = 30;
+    let minutes = 7;
     let seconds = 0;
 
     const countdown = setInterval(() => {
