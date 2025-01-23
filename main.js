@@ -64,3 +64,16 @@ setInterval(() => {
         });
     }
 }, 45000);
+
+// Alternar entre antes e depois
+function toggleBeforeAfter() {
+    const beforeImage = document.querySelector('.before-image');
+    const afterImage = document.querySelector('.after-image');
+    if (beforeImage.style.display === 'none') {
+        beforeImage.style.display = 'block';
+        afterImage.style.display = 'none';
+    } else {
+        beforeImage.style.display = 'none';
+        afterImage.style.display = 'block';
+    }
+}
