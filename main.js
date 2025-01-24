@@ -101,13 +101,17 @@ const beforeAfterImage = document.getElementById('beforeAfterImage');
 const toggleButton = document.getElementById('toggleButton');
 let isBefore = true;
 
+// URLs das imagens
+const antesURL = "https://via.placeholder.com/600x400?text=Antes";
+const depoisURL = "https://via.placeholder.com/600x400?text=Depois";
+
 toggleButton.addEventListener('click', () => {
     if (isBefore) {
-        beforeAfterImage.src = "URL_DA_IMAGEM_DEPOIS_AQUI";
+        beforeAfterImage.src = depoisURL; // Muda para a imagem "depois"
         toggleButton.textContent = "Ver Antes";
     } else {
-        beforeAfterImage.src = "URL_DA_IMAGEM_ANTES_AQUI";
+        beforeAfterImage.src = antesURL; // Volta para a imagem "antes"
         toggleButton.textContent = "Ver Depois";
     }
-    isBefore = !isBefore;
+    isBefore = !isBefore; // Alterna o estado
 });
