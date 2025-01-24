@@ -265,13 +265,21 @@
     <div class="coupon-popup" id="couponPopup">
         <div class="coupon-content">
             <span class="close-popup" onclick="closeCouponPopup()">&times;</span>
-            <h2>Parabéns!</h2>
-            <p>Você ganhou um cupom de desconto:</p>
-            <div class="coupon-code">
-                <span>MIX</span>
-                <button onclick="copyCoupon()">Copiar</button>
+            <div class="coupon-header">
+                <h2>🎉 Parabéns! 🎉</h2>
+                <p>Você ganhou um cupom de desconto exclusivo!</p>
             </div>
-            <small>Use o código na página de checkout para obter R$ 50,00 de desconto.</small>
+            <div class="coupon-body">
+                <div class="coupon-value">
+                    <span>R$</span>
+                    <span class="discount-amount">50,00</span>
+                </div>
+                <div class="coupon-code">
+                    <span>Código: <strong>MIX</strong></span>
+                    <button onclick="copyCoupon()">Copiar</button>
+                </div>
+                <small>Use o código na página de checkout para obter R$ 50,00 de desconto.</small>
+            </div>
         </div>
     </div>
 
