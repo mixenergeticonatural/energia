@@ -72,14 +72,14 @@ function copyCoupon() {
     });
 }
 
-// Exibir o cupom ao chegar na seção de preço
+// Exibir o popup do cupom ao chegar na seção de preço
 const offerSection = document.getElementById('offer');
-const couponBox = document.querySelector('.coupon-box');
+const couponPopup = document.getElementById('couponPopup');
 
 const observerOffer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
-            couponBox.style.display = 'block';
+            couponPopup.style.display = 'block';
         }
     });
 }, {
@@ -87,3 +87,7 @@ const observerOffer = new IntersectionObserver((entries) => {
 });
 
 observerOffer.observe(offerSection);
+
+function closeCouponPopup() {
+    couponPopup.style.display = 'none';
+}
