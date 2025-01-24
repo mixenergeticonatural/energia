@@ -20,7 +20,7 @@ body {
     line-height: 1.6;
     color: var(--dark);
     background: var(--light);
-    overflow-x: hidden; /* Remove a barra branca do lado direito */
+    overflow-x: hidden;
 }
 
 .floating-timer {
@@ -86,16 +86,16 @@ body {
     border-radius: 30px;
     font-weight: 700;
     font-size: 1rem;
-    margin-bottom: 10px; /* Ajuste do espaço */
+    margin-bottom: 10px;
     box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
-    margin-top: 10px; /* Ajuste do espaço */
+    margin-top: 10px;
 }
 
 .daily-routine {
     display: flex;
     justify-content: center;
     gap: 20px;
-    margin: 20px 0; /* Ajuste do espaço */
+    margin: 20px 0;
     flex-wrap: wrap;
 }
 
@@ -166,7 +166,7 @@ body {
     margin: 0 auto;
     box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
     transition: transform 0.3s ease;
-    margin-top: 20px; /* Espaço após o texto */
+    margin-top: 20px;
 }
 
 .cta-button:hover {
@@ -237,7 +237,7 @@ body {
 
 .benefit-item i {
     font-size: 1.5rem;
-    color: var(--secondary); /* Ícones verdes */
+    color: var(--secondary);
 }
 
 .benefit-item p {
@@ -333,8 +333,8 @@ body {
 
 .formula-image-placeholder {
     width: 100%;
-    height: 300px; /* Ajuste conforme necessário */
-    background: #ccc; /* Cor de fundo temporária */
+    height: 300px;
+    background: #ccc;
     margin-top: 20px;
 }
 
@@ -402,6 +402,53 @@ body {
     margin-top: 5px;
 }
 
+.coupon-box {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.coupon {
+    background: var(--secondary);
+    color: var(--white);
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow: 0 4px 15px rgba(46, 213, 115, 0.3);
+}
+
+.coupon span {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.coupon-code {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.coupon-code span {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.coupon-code button {
+    background: var(--white);
+    color: var(--secondary);
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.coupon small {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
 .security {
     display: flex;
     justify-content: center;
@@ -465,6 +512,12 @@ footer {
 .copyright {
     font-size: 0.8rem;
     opacity: 0.8;
+}
+
+.disclaimer {
+    font-size: 0.8rem;
+    opacity: 0.8;
+    margin-top: 10px;
 }
 
 .pulse {
