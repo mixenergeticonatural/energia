@@ -7,7 +7,7 @@ function scrollToOffer() {
 // Contador regressivo
 function startCountdown() {
     const countdownElement = document.getElementById('countdown');
-    let minutes = 30;
+    let minutes = 7;
     let seconds = 0;
 
     const countdown = setInterval(() => {
@@ -102,8 +102,8 @@ const toggleButton = document.getElementById('toggleButton');
 let isBefore = true;
 
 // URLs das imagens
-const antesURL = "https://via.placeholder.com/600x400?text=Antes";
-const depoisURL = "https://via.placeholder.com/600x400?text=Depois";
+const antesURL = "https://github.com/user-attachments/assets/aac2afb9-ea0b-4e0a-881e-2eff335a0bad";
+const depoisURL = "https://github.com/user-attachments/assets/ce06f425-856c-4112-b2ac-e4595ee00b22";
 
 toggleButton.addEventListener('click', () => {
     if (isBefore) {
