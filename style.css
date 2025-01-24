@@ -166,7 +166,7 @@ body {
     margin: 0 auto;
     box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
     transition: transform 0.3s ease;
-    margin-top: 10px; /* Ajuste do espaço */
+    margin-top: 10px;
 }
 
 .cta-button:hover {
@@ -215,14 +215,14 @@ body {
 
 .all-benefits h2 {
     font-size: 2rem;
-    margin-bottom: 10px; /* Ajuste do espaço */
+    margin-bottom: 10px;
 }
 
 .benefits-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 15px;
-    margin-top: 20px; /* Ajuste do espaço */
+    margin-top: 20px;
 }
 
 .benefit-item {
@@ -496,18 +496,56 @@ footer {
     left: 50%;
     transform: translate(-50%, -50%);
     background: var(--white);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
     z-index: 1001;
     text-align: center;
+    width: 90%;
+    max-width: 400px;
 }
 
 .coupon-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
+}
+
+.coupon-header {
+    text-align: center;
+}
+
+.coupon-header h2 {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 10px;
+}
+
+.coupon-header p {
+    font-size: 1.1rem;
+    color: var(--dark);
+}
+
+.coupon-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.coupon-value {
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+    font-size: 2.5rem;
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.coupon-value .discount-amount {
+    font-size: 3.5rem;
+    color: var(--secondary);
 }
 
 .coupon-code {
@@ -515,30 +553,45 @@ footer {
     align-items: center;
     gap: 10px;
     margin: 10px 0;
+    background: var(--light);
+    padding: 10px 20px;
+    border-radius: 30px;
 }
 
 .coupon-code span {
     font-size: 1.5rem;
-    font-weight: 800;
-    color: var(--primary);
+    font-weight: 700;
+    color: var(--dark);
 }
 
 .coupon-code button {
     background: var(--primary);
     color: var(--white);
     border: none;
-    padding: 5px 10px;
-    border-radius: 5px;
+    padding: 8px 15px;
+    border-radius: 20px;
     cursor: pointer;
     font-weight: 700;
+    font-size: 1rem;
+    transition: background 0.3s ease;
+}
+
+.coupon-code button:hover {
+    background: var(--accent);
 }
 
 .close-popup {
     position: absolute;
-    top: 10px;
-    right: 10px;
+    top: 15px;
+    right: 15px;
     font-size: 1.5rem;
     cursor: pointer;
+    color: var(--dark);
+    transition: color 0.3s ease;
+}
+
+.close-popup:hover {
+    color: var(--primary);
 }
 
 @media (min-width: 768px) {
