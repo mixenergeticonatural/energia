@@ -64,3 +64,26 @@ setInterval(() => {
         });
     }
 }, 45000);
+
+function copyCoupon() {
+    const couponCode = "MIX";
+    navigator.clipboard.writeText(couponCode).then(() => {
+        alert("Código copiado: " + couponCode);
+    });
+}
+
+// Exibir o cupom ao chegar na seção de preço
+const offerSection = document.getElementById('offer');
+const couponBox = document.querySelector('.coupon-box');
+
+const observerOffer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            couponBox.style.display = 'block';
+        }
+    });
+}, {
+    threshold: 0.1
+});
+
+observerOffer.observe(offerSection);
