@@ -331,7 +331,7 @@ body {
 
 .before-after {
     width: 100%;
-    max-width: 600px;
+    max-width: 400px;
     margin: 20px auto;
     text-align: center;
 }
@@ -339,7 +339,7 @@ body {
 .image-container {
     position: relative;
     width: 100%;
-    padding-top: 56.25%; /* Proporção 16:9 */
+    padding-top: 177.78%; /* Proporção 16:9 */
     overflow: hidden;
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
